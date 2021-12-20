@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
   res.sendFile('/Users/jameelgmail.com/Downloads/projects/project7/HomePage.html');
 })
 
+app.get('*', (req, res) =>{
+  res.send("you breaked the internet");
+})
+
 app.listen(port, () => {
   console.log(`http://localhost:${port}`)
 });
