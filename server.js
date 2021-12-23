@@ -8,8 +8,8 @@ app.get('/circleGame', (req, res) => {
     res.sendFile(__dirname + '/circleGame.html');
 })
 
-app.get('/pingPong', (req, res) => {
-  res.sendFile(__dirname + '/pingPong.html');
+app.get('/randomX', (req, res) => {
+  res.sendFile(__dirname + '/randomX.html');
 })
 
 app.get('/', (req, res) => {

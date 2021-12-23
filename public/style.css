@@ -22,3 +22,15 @@
     font-size: 2.7rem;
     margin-bottom: 0.7rem;
 }
+
+.box__one{
+    position:relative; 
+    left:800px; 
+    top:-600px;
+}
+
+.sc{
+    position:relative; 
+    left: 700px;
+    top: 0px;
+}
