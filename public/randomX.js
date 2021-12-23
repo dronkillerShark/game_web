@@ -1,4 +1,5 @@
 const app = function(){
+let isD = false;
 document.querySelector(".start").style.display = "none";
 let con = 300;
 let scc = 0;
@@ -23,6 +24,7 @@ const enemy = function(con){
             ctx.clearRect(0, 0, c.width, c.height);
             document.querySelector(".start").style.display = "";
             nummy.textContent = `you losed! your score is ${scc}`;
+            isD = true;
             }
             if(x >= 900 && x <= 920){
                 if(y2 >= y && y2 <= y + 100){
@@ -31,7 +33,7 @@ const enemy = function(con){
                     isH = false;
                     scc += 1;
                     nummy.textContent = `score: ${scc}`
-                    enemy(con - 5);
+                    enemy(con - 3);
                     clearInterval(conny);
                 }
             }
@@ -45,8 +47,7 @@ ctx.fillRect(900, y, 20, 100);
 ctx.stroke();
 
 window.addEventListener("keydown", (e) =>{
-
-    if(e.key == "ArrowUp"){
+    if(e.key == "ArrowUp" && !isD){
         if(!(y <= 50)){
             y -= ((80 - con) + 280);
         }
@@ -54,7 +55,7 @@ window.addEventListener("keydown", (e) =>{
         ctx.fillRect(900, y, 20, 100);
         if(isH)ctx.fillRect(x, y2, 20, 20);
     }
-    if(e.key == "ArrowDown"){
+    if(e.key == "ArrowDown" && !isD){
         if(!(y >= 300)){
             y += ((80 - con) + 280);
         }
