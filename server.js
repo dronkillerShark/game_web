@@ -12,6 +12,10 @@ app.get('/randomX', (req, res) => {
   res.sendFile(__dirname + '/randomX.html');
 })
 
+app.get('/tRex', (req, res) => {
+  res.sendFile(__dirname + '/t-rex.html');
+})
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/HomePage.html');
 })
