@@ -16,6 +16,10 @@ app.get('/tRex', (req, res) => {
   res.sendFile(__dirname + '/t-rex.html');
 })
 
+app.get('/spaceInvaders', (req, res) => {
+  res.sendFile(__dirname + '/spaceInvaders.html');
+})
+
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/HomePage.html');
 })

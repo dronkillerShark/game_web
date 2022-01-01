@@ -1,0 +1,40 @@
+.icons__copyright{
+    position: relative;
+    top: -100px;
+    font-size: 10px;
+}
+
+.space__ship{
+    position: relative;
+    top: 400px;
+    left: 700px;
+}
+
+body {
+    background-image: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/panorama-milky-way-galaxy-with-stars-and-space-dust-royalty-free-image-1623176828.jpg?resize=980:*");
+    background-size: 1500px 1000px;
+    background-repeat: no-repeat;
+}
+
+.laser__shoot{
+    position: relative;
+    top: 400px;
+    left: 770px;
+}
+
+.alien{
+    position: relative;
+    top: 0px;
+    left: 700px;
+}
+
+.hidden{
+    display: none;
+}
+
+.score{
+    color: white;
+    position: relative;
+    top: -10px;
+    left: 0px;
+}
